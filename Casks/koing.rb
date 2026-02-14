@@ -1,8 +1,8 @@
 cask "koing" do
-  version "0.2.0"
-  sha256 "7986a9aa910d7965250377d574dbec8395abe2591d59d38bda934693eec1b3d1"
+  version "0.3.0"
+  sha256 "4525d043865e8f110ec918584a9d0a14736f3576e7963cda9f0afde53b363034"
 
-  url "https://github.com/Voyager003/koing/releases/download/v#{version}/Koing-#{version}-arm64.zip"
+  url "https://github.com/Voyager003/koing/releases/download/v#{version}/Koing-#{version}.zip"
   name "Koing"
   desc "macOS Korean-English auto-converter"
   homepage "https://github.com/Voyager003/koing"
