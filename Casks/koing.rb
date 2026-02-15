@@ -1,6 +1,6 @@
 cask "koing" do
-  version "0.3.3"
-  sha256 "20bcff944b39c8ab12df7cf63bff614b13e6fa7fb2a71583e83d667121081aaa"
+  version "0.3.4"
+  sha256 "97167282e018fd9b659d1f72d94ebead9a27be4190a296e59159f54accc18c62"
 
   url "https://github.com/Voyager003/koing/releases/download/v#{version}/Koing-#{version}.zip"
   name "Koing"
@@ -15,5 +15,8 @@ cask "koing" do
   postflight do
     system_command "/usr/bin/xattr",
                    args: ["-d", "com.apple.quarantine", "#{appdir}/Koing.app"]
+    # 재설치/업그레이드 시 이전 빌드의 stale TCC 항목 제거
+    system_command "/usr/bin/tccutil",
+                   args: ["reset", "Accessibility", "com.koing.app"]
   end
 end
