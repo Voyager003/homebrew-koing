@@ -1,6 +1,6 @@
 cask "koing" do
   version "0.3.9"
-  sha256 "cc32b49325c56a72f093390d7291b4b7f2bc8c078f0a9c0d6ebe99712a8570ce"
+  sha256 "e5fa37218859027cd5288393bcf958210ae47edcaf95e086a0aa467ed9642085"
 
   url "https://github.com/Voyager003/koing/releases/download/v#{version}/Koing-#{version}.zip"
   name "Koing"
